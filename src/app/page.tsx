@@ -47,7 +47,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-gray-900 mb-8"
           >
-            Hi, I'm Lucine!
+            Hi, I'm Luciné!
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
