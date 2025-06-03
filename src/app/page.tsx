@@ -2,32 +2,10 @@
 
 import Image from "next/image";
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
-import { useState } from 'react'
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -57,10 +35,10 @@ export default function Home() {
             className="space-y-6 text-lg md:text-xl text-gray-700 mb-12"
           >
             <p>
-            Hi, I'm Luciné! Guiding others to expand into their best selves through movement, breath, and inward exploration is where I feel most authentically me.
+              Guiding others to expand into their best selves through movement, breath, and inward exploration is where I feel most authentically me.
             </p>
             <p>
-              Yoga—my personal catalyst for self-love, growth, and healing—is the method through which I do this. Teaching yoga allows me to express myself, connect with others, and align with my purpose. Here on my site, you'll find a one-stop shop for all of my offerings—both in-person and online.
+              Yoga—my personal catalyst for self-love, growth, and healing—is the method through which I do this. Teaching yoga allows me to express myself, connect with others, and align with my purpose. Here on my site, you&apos;ll find a one-stop shop for all of my offerings—both in-person and online.
             </p>
           </motion.div>
           <motion.div
@@ -89,36 +67,35 @@ export default function Home() {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-8 font-serif">About Me</h2>
-
+            
             <div className="relative h-[400px] rounded-lg overflow-hidden mb-12 gap-8">
-                <Image
-                  src="/about-yoga.jpg"
-                  alt="Yoga practice"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <Image
+                src="/about-yoga.jpg"
+                alt="Yoga practice"
+                fill
+                className="object-cover"
+              />
+            </div>
             
             <div className="grid md:grid-cols-1 gap-8 mb-12">
               <div>
                 <p className="mb-6">
-                  I was fortunate to grow up with yoga woven into my life—both my mom and maternal grandfather were dedicated yogis who believed deeply in passing the practice on. Because of them, I was always familiar with posture names and had the quiet confidence of knowing what to expect in a yoga class. But it wasn't until 2018, shortly after graduating from college, that I began to cultivate my own personal relationship with the practice. Since then, it's pretty much been at the forefront of my life.
+                  I was fortunate to grow up with yoga woven into my life—both my mom and maternal grandfather were dedicated yogis who believed deeply in passing the practice on. Because of them, I was always familiar with posture names and had the quiet confidence of knowing what to expect in a yoga class. But it wasn&apos;t until 2018, shortly after graduating from college, that I began to cultivate my own personal relationship with the practice. Since then, it&apos;s pretty much been at the forefront of my life.
                 </p>
 
                 <p className="mb-6">
-                  There were definitely ebbs and flows as I began cultivating my own relationship with yoga. While I was immediately inspired by the strength, presence, and flexibility I saw in advanced practitioners—both online and in studios—I quickly learned that there are no shortcuts in yoga. In fact, it's not about the destination at all. It's about what's here, now. That lesson continues to support me far beyond the mat, offering guidance in every area of my life.
+                  There were definitely ebbs and flows as I began cultivating my own relationship with yoga. While I was immediately inspired by the strength, presence, and flexibility I saw in advanced practitioners—both online and in studios—I quickly learned that there are no shortcuts in yoga. In fact, it&apos;s not about the destination at all. It&apos;s about what&apos;s here, now. That lesson continues to support me far beyond the mat, offering guidance in every area of my life.
                 </p>
-
-                <p className="mb-6">
-                Physically, I began to focus on the importance of building a strong foundation and developing a deep understanding of the basics. This has become a central part of my teaching style: foundational and explanation-based, with the intention of helping students move beyond simply following cues to truly understanding their own bodies.
-              </p>
-
-              <p className="mb-12">
-                I don't believe there's a one-size-fits-all approach to yoga—or to movement in general. But I do believe that when we root ourselves in the fundamentals, we create space to explore, adapt, and shape a practice that supports our unique needs and rhythms.
-              </p>
               </div>
-              
             </div>
+
+            <p className="mb-6">
+              Physically, I began to focus on the importance of building a strong foundation and developing a deep understanding of the basics. This has become a central part of my teaching style: foundational and explanation-based, with the intention of helping students move beyond simply following cues to truly understanding their own bodies.
+            </p>
+
+            <p className="mb-12">
+              I don&apos;t believe there&apos;s a one-size-fits-all approach to yoga—or to movement in general. But I do believe that when we root ourselves in the fundamentals, we create space to explore, adapt, and shape a practice that supports our unique needs and rhythms.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -138,7 +115,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <p className="mb-6">
-                  Through private instruction, these personalized sessions are designed to help you cultivate a deeper, more intentional connection with your body. With focused individual attention, we work together to open, strengthen, and flow in ways that align with your unique needs. Whether you're navigating injuries, addressing limitations, or striving toward personal goals like toning up, mastering advanced postures, or enhancing overall flexibility and strength, these sessions are tailored to support your journey.
+                  Through private instruction, these personalized sessions are designed to help you cultivate a deeper, more intentional connection with your body. With focused individual attention, we work together to open, strengthen, and flow in ways that align with your unique needs. Whether you&apos;re navigating injuries, addressing limitations, or striving toward personal goals like toning up, mastering advanced postures, or enhancing overall flexibility and strength, these sessions are tailored to support your journey.
                 </p>
 
                 <div className="bg-cream-light p-6 rounded-lg mb-6">
