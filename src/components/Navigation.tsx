@@ -24,10 +24,10 @@ export default function Navigation() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm">
+    <header className="fixed inset-x-0 top-0 z-50 bg-cream/90 backdrop-blur-sm shadow-sm">
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <button onClick={() => handleNavClick('#home')} className="-m-1.5 p-1.5 text-2xl font-bold text-indigo-600">
+          <button onClick={() => handleNavClick('#home')} className="-m-1.5 p-1.5 text-2xl font-bold text-sage font-serif">
             Luciné Jan Yoga
           </button>
         </div>
@@ -46,7 +46,7 @@ export default function Navigation() {
             <button
               key={item.name}
               onClick={() => handleNavClick(item.href)}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 transition-colors"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-sage transition-colors font-serif"
             >
               {item.name}
             </button>
@@ -57,7 +57,7 @@ export default function Navigation() {
             href="https://calendly.com/lucine-janjigian/new-meeting"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-semibold leading-6 text-white bg-indigo-600 px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors"
+            className="text-sm font-semibold leading-6 text-gray-800 bg-sage px-4 py-2 rounded-full hover:bg-sage-dark hover:text-gray-900 transition-colors ring-2 ring-sage/20 hover:ring-sage/30"
           >
             Book a Class
           </Link>
@@ -68,7 +68,7 @@ export default function Navigation() {
         <div className="fixed inset-0 bg-gray-900/80" aria-hidden="true" />
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <button onClick={() => handleNavClick('#home')} className="-m-1.5 p-1.5 text-2xl font-bold text-indigo-600">
+            <button onClick={() => handleNavClick('#home')} className="-m-1.5 p-1.5 text-2xl font-bold text-sage font-serif">
               Luciné Jan Yoga
             </button>
             <button
@@ -87,7 +87,7 @@ export default function Navigation() {
                   <button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-serif"
                   >
                     {item.name}
                   </button>
@@ -98,7 +98,7 @@ export default function Navigation() {
                   href="https://calendly.com/lucine-janjigian/new-meeting"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-800 bg-sage hover:bg-sage-dark hover:text-gray-900 ring-2 ring-sage/20 hover:ring-sage/30"
                 >
                   Book a Class
                 </Link>

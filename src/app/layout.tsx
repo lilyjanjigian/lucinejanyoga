@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Luciné Jan Yoga",
   description: "Welcome to Luciné Jan Yoga - A space for mindful movement and personal growth",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
