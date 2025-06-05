@@ -86,16 +86,18 @@ export default function Home() {
                 <p className="mb-6">
                   There were definitely ebbs and flows as I began cultivating my own relationship with yoga. While I was immediately inspired by the strength, presence, and flexibility I saw in advanced practitioners—both online and in studios—I quickly learned that there are no shortcuts in yoga. In fact, it&apos;s not about the destination at all. It&apos;s about what&apos;s here, now. That lesson continues to support me far beyond the mat, offering guidance in every area of my life.
                 </p>
+
+                <p className="mb-6">
+                  Physically, I began to focus on the importance of building a strong foundation and developing a deep understanding of the basics. This has become a central part of my teaching style: foundational and explanation-based, with the intention of helping students move beyond simply following cues to truly understanding their own bodies.
+                </p>
+
+                <p className="mb-12">
+                  I don&apos;t believe there&apos;s a one-size-fits-all approach to yoga—or to movement in general. But I do believe that when we root ourselves in the fundamentals, we create space to explore, adapt, and shape a practice that supports our unique needs and rhythms.
+                </p>
               </div>
             </div>
 
-            <p className="mb-6">
-              Physically, I began to focus on the importance of building a strong foundation and developing a deep understanding of the basics. This has become a central part of my teaching style: foundational and explanation-based, with the intention of helping students move beyond simply following cues to truly understanding their own bodies.
-            </p>
-
-            <p className="mb-12">
-              I don&apos;t believe there&apos;s a one-size-fits-all approach to yoga—or to movement in general. But I do believe that when we root ourselves in the fundamentals, we create space to explore, adapt, and shape a practice that supports our unique needs and rhythms.
-            </p>
+            
           </motion.div>
         </div>
       </section>
